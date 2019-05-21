@@ -7,6 +7,10 @@ Caligrafy is a new and modern MVC framework for PHP. In this course, you will le
 
 This is an outstanding course that will empower you to build progressive web and mobile web applications quickly.
 
+***
+[Get Started](https://github.com/caligrafy/caligrafy-course/wiki)
+***
+
 ## What you’ll learn
 - Introduction to PHP, MySql, Apache
 - Code sharing and github repositories
