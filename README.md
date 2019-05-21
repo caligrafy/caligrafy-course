@@ -1,6 +1,5 @@
 # Caligrafy - A Light PHP Framework
 ![Caligrafy](http://broadposter.com/public/uploads/08fc6d5af320f97c1f341b82.png)
-test
 
 ## Welcome to the Caligrafy Course
 
