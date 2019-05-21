@@ -29,7 +29,8 @@ This is an outstanding course that will empower you to build progressive web and
 - Basic Knowledge of PHP
 - Basic Knowledge of MySql
 - Basic Knowledge of HTML/CSS
-- Who this course is for:
+
+## Who this course is for:
 - Beginner PHP developers
 - Beginner Laravel developers
 - Computer Science or Engineering Students
