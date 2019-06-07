@@ -1,0 +1,1 @@
+INSERT INTO users (username, passcode, permissions) VALUES ('Dory', 'Z1I0UHMwaE5talJ6bFRTTFUwOE5GZz09OjqaqBFwNgD7wM3W/LLS/Hdu', 3);
