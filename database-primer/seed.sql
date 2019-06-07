@@ -1,1 +1,2 @@
-INSERT INTO users (username, passcode, permissions) VALUES ('Dory', 'Z1I0UHMwaE5talJ6bFRTTFUwOE5GZz09OjqaqBFwNgD7wM3W/LLS/Hdu', 3);
+INSERT INTO users(name) VALUES ('Dory');
+INSERT INTO projects (title, short_description, users_id) VALUES ('First project', 'this is the first project', 1);
