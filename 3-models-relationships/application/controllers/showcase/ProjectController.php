@@ -47,7 +47,7 @@ class ProjectController extends Controller {
         $project->short_description = $parameters['short_description']?? 'short not entered';
         $project->description = $parameters['description']?? 'description not entered';
         $project->image_url = $parameters['image_url']?? 'image not entered';
-        $project->user_id = $parameters['image_url']?? 1;
+        $project->user_id = $parameters['user_id']?? 1;
         
         dump($this->save($project));
         
