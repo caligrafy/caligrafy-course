@@ -1,0 +1,57 @@
+extends ../default/master/layoutblocks
+
+
+block content
+    - $title = $project->title?? '';
+    - $category = $project->category?? '';
+    .spacer-4
+    form(id="showcase_form", method='POST', enctype="multipart/form-data")
+        if $put
+            =methodField('PUT')
+        =csrf()
+        .wrapper.card.color0.bounded-xlarge.content-section.equally-spaced-1.dropshadow.horizontal-center
+            .horizontal-left
+                if $error
+                    include ../default/modules/messaging
+                .spacer-2
+                .form-group
+                    label(for='title', class="textcolor5") * title
+                    if isset($errors['title'])
+                        p(class="error")= $errors['title']
+                    input(type='text', name='title', class="form-control input-default", placeholder="Enter the title", maxlength="18", value="{$title}", required)
+
+                .form-group
+                    label(for='category', class="textcolor5") * category
+                    if isset($errors['category'])
+                        p(class="error")= $errors['category']
+                    input(type='text', name='category', class="form-control input-default", placeholder="Enter a category name", maxlength="50", value="{$category}", required)
+
+                .form-group
+                    label(for='short_description', class="textcolor5") * short description
+                    if isset($errors['short_description'])
+                        p(class="error")= $errors['short_description']
+                    textarea(class="form-control", name="short_description", id="short_description", maxlength="200", rows="3", placeholder="What is this project about?", required)= $project->short_description?? ''
+
+                .form-group
+                    label(for='description', class="textcolor5") * description
+                    if isset($errors['description'])
+                        p(class="error")= $errors['description']
+                    textarea(class="form-control", name="description", id="description", rows="6", placeholder="Give us more details about your project", required)= $project->description?? ''
+
+                if !$put
+                    .form-group
+                        label(for='image_url', class="textcolor5") * upload a photo
+                        if isset($errors['image_url'])
+                            p(class="error")= $errors['image_url']
+                        input(type="file", id="image_url", name="image_url", class="form-control input-default", accept='image/*')
+                    
+                .spacer-2
+                
+                input(class="btn btn-primary btn-md btn-block", type="submit", value="Save")
+    if $put
+        form(id="delete_form", method="POST", enctype="multipart/form-data")
+            =methodField('DELETE')
+            =csrf()
+            input(class="btn btn-link btn-md btn-block", type='submit', value="Delete the post")
+    .spacer-2
+        
