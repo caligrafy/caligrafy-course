@@ -1,5 +1,5 @@
 # Caligrafy - A Light PHP Framework
-![Caligrafy](https://caligrafy.com/public/images/resources/banner_white.png)
+![Caligrafy](https://github.com/DoryAzar/caligrafy/blob/master/public/images/resources/banner_white.png)
 
 ## Welcome to the Caligrafy Course
 
